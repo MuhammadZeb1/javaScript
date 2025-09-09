@@ -8,7 +8,8 @@ let accountEmil = "ali@gmail.com"
 // let accountEmil = "jdjjdjd"
 //  change value and re-declier
 var accountPasswaord = "2383474"
-//  
+var accountPasswaord = "jdfhdhf"
+//  without any use of  keyword  declaier
 accountCity = "peshawar"
 
 // accountId ="ee"  not allowed that type
