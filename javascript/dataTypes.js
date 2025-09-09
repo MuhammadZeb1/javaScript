@@ -8,9 +8,9 @@
 
 // premitive dataTypes
 
-let num = 3454 // number Data Type
-let str = "3454" // string Data Type  we use that ""
-let bole = true // bolean Data Type  we use that false
+// let num = 3454 // number Data Type
+// let str = "3454" // string Data Type  we use that ""
+// let bole = true // bolean Data Type  we use that false
 
 
  
