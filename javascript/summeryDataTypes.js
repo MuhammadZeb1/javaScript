@@ -64,3 +64,30 @@ console.log(typeof bigInt) // bigint
     */
 
 
+// ===============================================================================================================
+
+// two types of memory 
+
+// stack(use the stack memeroy (primitive memory) give you the copy ) and heap (use the heap memeroy (non-primitive memory)refrnce value)
+  
+
+// let myName = "ali "
+
+// let anotherName =  myName
+// anotherName ="khan "
+
+// console.log(anotherName)
+// console.log(myName)
+
+const userOne = {
+    name :"ali"
+}
+
+const userTwo = userOne
+
+userTwo.name = "aalilll"
+
+console.log(userOne.name)
+console.log(userTwo.name)
+
+
