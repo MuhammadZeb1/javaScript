@@ -33,4 +33,6 @@ const min = 20
 
 const max = 40
 
+// console.log(typeof(min.toLocaleString()))
+
 console.log(Math.floor(Math.random()*(max -min +1)+min))
