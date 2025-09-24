@@ -5,10 +5,12 @@ const fun = (name)=>{
 }
 function App() {
     const [num,setNum]= useState(["khan","ali","waqif"])
-    const [inc, setInc]= useState(0)
-      
+    const [inc, setInc]= useState(true)
+    
     const change = ()=>{
-      setInc(inc+1)
+      setInc(!inc)
+      console.log(inc)
+      
       
       console.log(inc)
       
@@ -16,7 +18,7 @@ function App() {
   return (
     <>
       
-      <h1>{inc< num.length?num[inc]:"out"}</h1>
+      <h1>{}</h1>
       <button onClick={change}>click me</button>
     </>
   )
