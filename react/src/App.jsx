@@ -1,15 +1,27 @@
-import { createElement } from "react"
+import { useState } from "react"
 
-createElement
+const fun = (name)=>{
+  alert(name)
+}
 function App() {
+    const [num,setNum]= useState(["khan","ali","waqif"])
+    const [inc, setInc]= useState(0)
+      
+    const change = ()=>{
+      setInc(inc+1)
+      
+      console.log(inc)
+      
+    }
+  return (
+    <>
+      
+      <h1>{inc< num.length?num[inc]:"out"}</h1>
+      <button onClick={change}>click me</button>
+    </>
+  )
 
-  // return (
-  //   <>
-  //     <h1>hello</h1>
-  //   </>
-  // )
-
-  return createElement("div",{id:"my"}, "hello my")
+ 
 }
 
 export default App
