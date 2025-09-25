@@ -3,6 +3,7 @@ import User from './User'
 
 function App() {
   const [count, setCount] = useState(1)
+  const [color , setColor] = useState(["red", "green", "blue"])
   const [name, setName] = useState(["ali", "khan", "zeb"])
   
 
@@ -22,7 +23,9 @@ function App() {
       <hr />
 
       {/* User component کو name prop دیں */}
-      <User name={name[count]} />  
+      <User name={name[count]} color={color[count]}> 
+        <h1>'hello'</h1>
+      </User>
     </div>
 
       <h1>{count}</h1>

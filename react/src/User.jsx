@@ -1,10 +1,11 @@
-import React from 'react'
-
-function User( props ) {
-    console.log(props)
+function User(props) {
+  console.log(props)
   return (
-    <div>User {props.name}</div>
+    <div style={{color:props.color}}>
+      User {props.name}
+      {props.color}
+      {props.children}
+    </div>
   )
 }
-
 export default User
