@@ -3,6 +3,8 @@ import User from './User'
 import Iput from './Iput'
 import Skills from './Skills'
 import Radio from './Radio'
+import UserData from './UserData'
+import MapCom from './resuable/MapCom'
 
 function App() {
   const [count, setCount] = useState(1)
@@ -18,7 +20,9 @@ function App() {
   return (
 
     <>
-    <Radio/>
+    <MapCom/>
+    {/* <UserData/> */}
+    {/* <Radio/> */}
     {/* <Skills/> */}
     {/* <Iput/> */}
     </>
