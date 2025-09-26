@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from 'react'
+// import './css/Style.css'
+import style from './style.module.css'
+
 
 function Effect() {
     const [count, setCount] = useState(0);
@@ -12,7 +15,7 @@ function Effect() {
     }
   return (
     <>
-    <div>Effect</div>
+    <div className={style.heading}>Effect</div>
     <button onClick={() => setCount(count + 1)} >Click {count}</button>
     </>
   )

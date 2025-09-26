@@ -21,12 +21,13 @@ function App() {
   return (
 
     <>
+    <h1 className='heading'>kkk</h1>
     <Effect/>
     {/* <MapCom/> */}
     {/* <UserData/> */}
     {/* <Radio/> */}
     {/* <Skills/> */}
-    {/* <Iput/> */}
+    <Iput/>
     </>
   //   <div>
   // <div>
