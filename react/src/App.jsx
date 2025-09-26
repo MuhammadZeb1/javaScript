@@ -6,6 +6,7 @@ import Radio from './Radio'
 import UserData from './UserData'
 import MapCom from './resuable/MapCom'
 import Effect from './Effect'
+import Ref from './Ref'
 
 function App() {
   const [count, setCount] = useState(1)
@@ -21,13 +22,14 @@ function App() {
   return (
 
     <>
-    <h1 className='heading'>kkk</h1>
-    <Effect/>
+    <Ref/>
+    {/* <h1 className='heading'>kkk</h1> */}
+    {/* <Effect/> */}
     {/* <MapCom/> */}
     {/* <UserData/> */}
     {/* <Radio/> */}
     {/* <Skills/> */}
-    <Iput/>
+    {/* <Iput/> */}
     </>
   //   <div>
   // <div>
