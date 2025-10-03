@@ -20,11 +20,11 @@ console.log("ali")
 //  console.log(sum)//  undefined(it is not return any value)
 
 
-function strFun(username) {
+function strFun(username = "ali") {
     return `hello ${username}`;
 }
 
 const result = strFun("ali");
 
-// Output دکھانے کے لیے
+
 console.log(result);
