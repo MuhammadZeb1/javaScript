@@ -29,6 +29,23 @@ const obj3 ={4:"four",5:"five"}
 // const newObj = Object.assign({},obj2,obj3)// merge two object
 // const newObj = Object.assign(obj2,obj3)// merge two object
 
-const newObj = {...obj2,...obj3} // spread operator
+// const newObj = {...obj2,...obj3} // spread operator
 
-console.log("newObj",newObj)
+// console.log("newObj",newObj)
+
+// array like object
+// const arrLikeObj = {
+//     0:"muhammad",
+//     1:"zeb",
+//     length:2
+// }
+// console.log("arrLikeObj",arrLikeObj[0])
+
+// Array of object 
+
+const arrayOfObj = [
+    {id:1,name:"muhammad"},
+    {id:2,name:"zeb"},
+    {id:3,name:"ahmad"},
+]
+console.log("arrayOfObj",arrayOfObj[1].name)
