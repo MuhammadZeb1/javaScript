@@ -43,9 +43,17 @@ const obj3 ={4:"four",5:"five"}
 
 // Array of object 
 
-const arrayOfObj = [
-    {id:1,name:"muhammad"},
-    {id:2,name:"zeb"},
-    {id:3,name:"ahmad"},
-]
-console.log("arrayOfObj",arrayOfObj[1].name)
+// const arrayOfObj = [
+//     {id:1,name:"muhammad"},
+//     {id:2,name:"zeb"},
+//     {id:3,name:"ahmad"},
+// ]
+// console.log("arrayOfObj",arrayOfObj[1].name)
+  
+console.log("obj",Object.keys(obj))// return array of keys
+console.log("obj",Object.values(obj))// return array of values
+console.log("obj",Object.entries(obj))// return array of array key value pair
+console.log("obj",Object.hasOwn(obj,"id"))// return boolean if key exist or not
+console.log("obj",Object.hasOwnProperty(obj,"age"))// return boolean if key exist or not
+
+
