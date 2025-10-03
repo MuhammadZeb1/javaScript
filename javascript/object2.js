@@ -55,15 +55,23 @@
 // console.log("obj",Object.hasOwn(obj,"id"))// return boolean if key exist or not
 // console.log("obj",Object.hasOwnProperty(obj,"age"))// return boolean if key exist or not
 
-const  obj = {
-    name :"muhammad zeb ",
-    rollNo :33
-}
+// const  obj = {
+//     name :"muhammad zeb ",
+//     rollNo :33
+// }
 // console.log(obj.name)// muhammad zeb
 
-const {name:jk}=obj// object destruture
+// const {name:jk}=obj// object destruture
 // const {name}=obj// object destruture
-console.log(jk)// muhammad zeb
+// console.log(jk)// muhammad zeb
+
+// {
+//     "name":"ali",
+//     "full name":"muhammad zeb",
+//     "rollNo":33
+// }
+
+
 
 
 
