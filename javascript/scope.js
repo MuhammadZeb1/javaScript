@@ -32,19 +32,34 @@ var c = 11;
 
 // nested function 
 
-function one (){
-    const name = "ali"
+// function one (){
+//     const name = "ali"
 
-    function two (){
+//     function two (){
 
-        const lName = "khan"
+//         const lName = "khan"
         
-        console.log(name)
-    }
-        console.log(lName)
+//         console.log(name)
+//     }
+//         console.log(lName)
 
-        two()
+//         two()
 
+// }
+
+// one()\
+
+
+
+
+greet(); // Hello, World!
+function greet() {
+  console.log("Hello, World!");
 }
 
-one()
+
+const greet = function() {
+  console.log("Hello from Function Expression!");
+};
+greet();
+
