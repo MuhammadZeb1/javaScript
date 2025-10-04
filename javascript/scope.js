@@ -53,12 +53,12 @@ var c = 11;
 
 
 greet(); // Hello, World!
-function greet() {
+function greet() {//// ✅ Named function (named function declaration)
   console.log("Hello, World!");
 }
 
 
-const greet = function() {
+const greet = function() {//❌ No name(Anonymous function)
   console.log("Hello from Function Expression!");
 };
 greet();
