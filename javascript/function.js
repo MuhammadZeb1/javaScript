@@ -20,11 +20,33 @@ console.log("ali")
 //  console.log(sum)//  undefined(it is not return any value)
 
 
-function strFun(username = "ali") {
-    return `hello ${username}`;
-}
+// function strFun(username = "ali") {//username = "ali"(default parameter)
+//     return `hello ${username}`;
+// }
 
-const result = strFun("ali");
+// const result = strFun("ali");
 
 
-console.log(result);
+// console.log(result);
+// let add = 0
+// function addPrice(...num1) {//...num1(reset parameter)
+//     return num1
+// }
+
+// console.log(addPrice(55,88))
+
+// object passing in parameter
+
+// function addPrice(obj){
+//     console.log(obj)
+// }
+
+// addPrice({name:"ali",age:23})
+
+// array passing in parameter
+
+// function addPrice(arr){
+//     console.log(arr)
+// }
+
+// addPrice([1,2,3,4,5])
