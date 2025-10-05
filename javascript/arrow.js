@@ -22,6 +22,12 @@
     // }
 
     // chai()
+    // 3. Anonymous Function
+
+// A function without a name is called an anonymous function.
+  //  function (){
+  //   console.log(jjj)
+  //  }
 
     //  const chai= (num, num)=>{ // exp return
     //   return mum +num
