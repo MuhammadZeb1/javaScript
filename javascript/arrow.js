@@ -23,9 +23,15 @@
 
     // chai()
 
-     const chai= ()=>{
-      const username = "ali"
-      console.log(this) //{}
-    }
+    //  const chai= (num, num)=>{ // exp return
+    //   return mum +num
+    // }
 
-    chai()
+    // chai(3,4)
+    //  imp return
+    //  const chai= (num , num2)=> num + num2
+    //  const chai= (num , num2)=> (num + num2)
+     const chai= (num , num2)=> ({name:"ali", rollNo:33})// object
+
+
+   console.log( chai(3,4))
