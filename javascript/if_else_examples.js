@@ -1,4 +1,4 @@
-// if-else-examples.js
+
 
 // Example 1: if statement
 let age1 = 20;
