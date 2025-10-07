@@ -71,7 +71,7 @@ Good
 // let val2 = null;
 // console.log(val2 ?? "Default value"); // Default value
 
-// nullish-coalescing.js
+// nullish-coalescing
 
 // let username = null;
 // let displayName = username ?? "Guest";
