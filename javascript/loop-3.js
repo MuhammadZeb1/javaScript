@@ -13,4 +13,10 @@ const num = [1,2,3,4,5,6,7,8,9,10];
 
 const result = num.map((num)=> (num *2))// return boolean value
 // const result = num.map((num)=> (num > 2))// return boolean value
-console.log(result)
+// console.log(result)
+
+// reduce method
+// const sum = num.reduce((accumulator,currentValue)=>(accumulator + currentValue),0)
+const sum = num.reduce( function(accumulator,currentValue)
+{ return accumulator + currentValue},0)
+console.log(sum)
