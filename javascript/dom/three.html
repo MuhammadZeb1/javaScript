@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Example</title>
+</head>
+<body>
+  <h1 id="heading" class="title">Hello JavaScript</h1>
+  <p id="info" class="text">This is a demo paragraph.</p>
+
+  <script>
+    // ---------- NOTES & EXAMPLES ----------
+
+    // 1️⃣ getElementById() → کسی element کو اس کے ID سے حاصل کرتا ہے۔
+    let heading = document.getElementById("heading");
+    console.log(heading); // <h1 id="heading" class="title">Hello JavaScript</h1>
+
+    // 2️⃣ textContent → کسی element کا اندر والا text حاصل یا بدلنے کے لیے۔
+    console.log(heading.textContent); // Output: Hello JavaScript
+    heading.textContent = "Welcome to DOM!";
+    
+    // 3️⃣ setAttribute() → نیا attribute لگانے یا بدلنے کے لیے۔
+    heading.setAttribute("class", "main-heading"); // class add/replace ہو گئی
+    heading.setAttribute("style", "color:blue; font-size:30px;");
+
+    // 4️⃣ getAttribute() → کسی attribute کی value حاصل کرنے کے لیے۔
+    let cls = heading.getAttribute("class");
+    console.log("Class name:", cls); // Output: main-heading
+
+    // 4.1️⃣ getAttribute("id") → element کی ID حاصل کرنے کے لیے۔
+    let idValue = heading.getAttribute("id");
+    console.log("ID value:", idValue); // Output: heading
+
+    // 5️⃣ removeAttribute() → کسی attribute کو delete کرنے کے لیے۔
+    heading.removeAttribute("style");
+
+    // 6️⃣ Changing ID dynamically
+    heading.id = "newHeading"; // اب ID بدل گئی ہے
+    console.log("New ID:", heading.id); // Output: newHeading
+
+    // ⚠️ Important Note:
+    // اب document.getElementById("heading") null واپس کرے گا کیونکہ id بدل چکی ہے۔
+    // اس لیے دوبارہ نیا id استعمال کرو:
+    let newHead = document.getElementById("newHeading");
+    newHead.textContent = "ID Changed Successfully!";
+
+    // 7️⃣ Add new element dynamically
+    let newPara = document.createElement("p");
+    newPara.textContent = "This paragraph was added by JavaScript.";
+    document.body.appendChild(newPara);
+
+    // 8️⃣ Getting class and id of new paragraph
+    let para = document.getElementById("info");
+    console.log("Paragraph ID:", para.getAttribute("id"));
+    console.log("Paragraph Class:", para.getAttribute("class"));
+  </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>innerHTML vs innerText vs textContent</title>
+  <style>
+    body {
+      background-color: #eef;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    p {
+      background-color: white;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px gray;
+    }
+    button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      border: none;
+      background-color: dodgerblue;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>innerHTML vs innerText vs textContent</h1>
+
+  <p id="demo">
+    Hello <b>World</b> <i>!</i><br>
+    <span style="display:none;">This is hidden text.</span>
+  </p>
+
+  <button onclick="showDifference()">Show Difference</button>
+
+  <h3>Results:</h3>
+  <pre id="result" style="background:#fff;padding:10px;border-radius:8px;"></pre>
+
+  <script>
+    function showDifference() {
+      let demo = document.getElementById("demo");
+      let result = document.getElementById("result");
+
+      // تینوں properties check کریں
+      let htmlValue = demo.innerHTML;
+      let textValue = demo.innerText;
+      let contentValue = demo.textContent;
+
+      // Result show کریں
+      result.textContent =
+        "innerHTML:   " + htmlValue + "\n\n" +
+        "innerText:   " + textValue + "\n\n" +
+        "textContent: " + contentValue;
+    }
+  </script>
+
+</body>
+</html>
