@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Example</title>
+</head>
+<body>
+  <!-- Heading element -->
+  <h1 id="main-heading">Welcome to My Page</h1>
+
+  <!-- Paragraph element -->
+  <p class="info">This text will change when you click the button below.</p>
+
+  <!-- Another paragraph with the same class (to show only the first one will be selected) -->
+  <p class="info">This text will NOT change.</p>
+
+  <!-- Button element -->
+  <button id="btn">Click Me</button>
+
+  <!-- JavaScript section -->
+  <script>
+    // Using querySelector() to select elements from the DOM
+
+    // Select the heading using its ID
+    const heading = document.querySelector("#main-heading");
+
+    // Select the paragraph using its class name
+    // NOTE: querySelector() selects only the FIRST matching element
+    const paragraph = document.querySelector(".info");
+
+    // Select the button using its ID
+    const button = document.querySelector("#btn");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", () => {
+      // Change the heading text
+      heading.textContent = "Hello from JavaScript!";
+
+      // Change the paragraph text
+      paragraph.textContent = "The DOM has been updated successfully.";
+
+      // Change the heading color
+      heading.style.color = "blue";
+    });
+
+    // 👉 Explanation:
+    // querySelector() allows us to find and use elements inside the DOM.
+    // It accepts any valid CSS selector (#id, .class, tag name, etc.).
+    // IMPORTANT: It selects ONLY the first element that matches the selector.
+  </script>
+</body>
+</html>
