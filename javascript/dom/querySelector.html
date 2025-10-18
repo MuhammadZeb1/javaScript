@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DOM Example</title>
+  <style>
+    .change {
+      color: red ;
+      background-color: blue;
+    }
+  </style>
 </head>
 <body>
   <!-- Heading element -->
@@ -41,7 +47,7 @@
       paragraph.textContent = "The DOM has been updated successfully.";
 
       // Change the heading color
-      heading.style.color = "blue";
+      heading.setAttribute("class","change")
     });
 
     // 👉 Explanation:

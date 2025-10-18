@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM querySelectorAll Example</title>
+</head>
+<body>
+  <!-- Multiple paragraph elements with the same class -->
+  <p class="info">Paragraph 1</p>
+  <p class="info">Paragraph 2</p>
+  <p class="info">Paragraph 3</p>
+
+  <!-- Button element -->
+  <button id="btn">Change All</button>
+
+  <script>
+    // DOM Example using querySelectorAll()
+    // querySelectorAll() is used to select ALL elements that match a CSS selector.
+    // NOTE: Unlike querySelector(), which selects only the FIRST matching element,
+    // querySelectorAll() returns a NodeList of ALL matched elements.
+
+    // Select all <p> elements with class "info"
+    const paragraphs = document.querySelectorAll(".info");
+
+    // Select button by ID
+    const button = document.querySelector("#btn");
+
+    // Add click event listener
+    button.addEventListener("click", () => {
+      // Loop through each paragraph and update text + style
+      paragraphs.forEach((para, index) => {
+        para.textContent = `Paragraph ${index + 1} has been updated!`;
+        para.style.color = "green";       // Change text color
+        para.style.fontWeight = "bold";   // Make text bold
+      });
+    });
+  </script>
+</body>
+</html>
