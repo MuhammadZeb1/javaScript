@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create-element</title>
+</head>
+<body>
+    <h1>hello</h1>
+    <div class="parant">
+        <div class="day">mon</div>
+        <div class="day">thu</div>
+        <div class="day">wed</div>
+        <div class="day">sat</div>
+        <div class="day">friday</div>
+    </div>
+</body>
+<script>
+    let para = document.querySelector(".parant");
+    console.log("prar", para);
+
+    // .children returns only the element children (ignores text nodes)
+    // console.log(para.children)
+
+    // .childNodes returns all child nodes (including text and spaces)
+    // console.log(para.childNodes)
+
+    // Loop through children
+    for (let i = 0; i < para.children.length; i++) {
+        // console.log(para.children[i]);
+        // console.log("    ", para.childNodes[i]);
+    }
+
+    // ✅ First and Last Child
+    // console.log(para.firstElementChild); // First HTML element child
+    // console.log(para.firstChild); // First node (might be text)
+    // console.log(para.lastElementChild); // Last HTML element child
+    // console.log(para.lastChild); // Last node (might be text)
+
+    // ✅ Specific Child (Target by Index)
+    // console.log("2nd Child:", para.children[1]); // Target 2nd element
+
+    // ✅ Parent Element
+    // console.log("Parent of 2nd Child:", para.children[1].parentNode);
+
+    // ✅ Next Sibling
+    // console.log("Next Sibling of 2nd Child:", para.children[1].nextElementSibling);
+
+    // ✅ Previous Sibling
+    // console.log("Previous Sibling of 2nd Child:", para.children[1].previousElementSibling);
+
+    // ✅ Attributes
+    // console.log("Class Attribute of Parent:", para.getAttribute("class"));
+
+    // ✅ Check if Attribute Exists
+    // console.log("Has class attribute?", para.hasAttribute("class"));
+
+    // ✅ Add New Attribute
+    // para.setAttribute("id", "parentBox");
+    // console.log("New Attribute Added:", para);
+
+    // ✅ Remove Attribute
+    // para.removeAttribute("id");
+    // console.log("Attribute Removed:", para);
+</script>
+</html>
