@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language List</title>
+</head>
+<body>
+  <ul class="language">
+    <li>Javascript</li>
+  </ul>
+
+  <script>
+    // Function to add a language using innerHTML (not optimized)
+    function addLanguage(langName) {
+      const li = document.createElement('li');
+      li.innerHTML = `${langName}`;
+      document.querySelector('.language').appendChild(li);
+    }
+
+    addLanguage("python");
+    addLanguage("typescript");
+
+    // Optimized function to add language using createTextNode
+    function addOptiLanguage(langName) {
+      const li = document.createElement('li');
+      const text = document.createTextNode(langName);
+      li.appendChild(text);
+      document.querySelector('.language').appendChild(li);
+    }
+
+    // Remove the second language (now first li after removal)
+    const secondLang = document.querySelector("li:nth-child(1)");
+    secondLang.remove(); // removes "python"
+  </script>
+</body>
+</html>
