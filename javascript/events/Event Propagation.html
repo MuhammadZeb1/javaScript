@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    ul {
+      border: 2px solid black;
+      width: 200px;    /* ul کی width */
+      padding: 10px;
+    }
+
+    li {
+      border: 1px solid blue;
+      height: 30px;    /* ہر list item کی height */
+      line-height: 30px; /* text vertically center */
+      list-style: none;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+ <ul id="studentList">
+  <li id="item1">Ali</li>
+  <li id="item2">Ahmed</li>
+  <li id="item3">Sara</li>
+  <li id="item4">Zara</li>
+  <li id="item5">John</li>
+  <li id="item6">Mary</li>
+  <li id="item7">Bilal</li>
+</ul>
+
+
+</body>
+<script>
+    // Event Propagation Example
+    
+    // Capturing Phase
+    document.getElementById("studentList").addEventListener("click", function(event) {
+        console.log("UL Capturing Phase");
+    }, false); // true for capturing
+    
+    // Target Phase
+    document.getElementById("item3").addEventListener("click", function(event) {
+        console.log("LI Target Phase: Sara clicked");
+    });
+    
+    // Bubbling Phase
+    // document.getElementById("studentList").addEventListener("click", function(event) {
+    //     console.log("UL Bubbling Phase");
+    // }, true); // false for bubbling
+</script>
+</html>
