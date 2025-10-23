@@ -36,13 +36,16 @@
     
     // Capturing Phase
     document.getElementById("studentList").addEventListener("click", function(event) {
-        console.log("UL Capturing Phase");
-    }, false); // true for capturing
+        console.log(1);
+        // console.log("UL Capturing Phase");
+    },true); // true for capturing
     
     // Target Phase
     document.getElementById("item3").addEventListener("click", function(event) {
-        console.log("LI Target Phase: Sara clicked");
-    });
+        console.log(2);
+        // console.log("LI Target Phase: Sara clicked");
+        // event.stopPropagation();
+    },);
     
     // Bubbling Phase
     // document.getElementById("studentList").addEventListener("click", function(event) {
