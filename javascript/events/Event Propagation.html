@@ -35,21 +35,36 @@
     // Event Propagation Example
     
     // Capturing Phase
-    document.getElementById("studentList").addEventListener("click", function(event) {
-        console.log(1);
-        // console.log("UL Capturing Phase");
-    },true); // true for capturing
+    // document.getElementById("studentList").addEventListener("click", function(event) {
+    //     console.log(1);
+    //     // console.log("UL Capturing Phase");
+    // },true); // true for capturing
     
     // Target Phase
-    document.getElementById("item3").addEventListener("click", function(event) {
-        console.log(2);
-        // console.log("LI Target Phase: Sara clicked");
-        // event.stopPropagation();
-    },);
+    // document.getElementById("item3").addEventListener("click", function(event) {
+    //     console.log(2);
+    //     // console.log("LI Target Phase: Sara clicked");
+    //     // event.stopPropagation();
+    // },);
     
     // Bubbling Phase
     // document.getElementById("studentList").addEventListener("click", function(event) {
     //     console.log("UL Bubbling Phase");
     // }, true); // false for bubbling
+
+
+
+
+    // remove the element
+    document.getElementById("studentList").addEventListener("click", function(event) {
+      event.stopPropagation()
+        // console.log("LI Bubbling Phase: Sara clicked");
+       let removeIt = event.target//.parentNode;
+        console.log(removeIt);
+        // removeIt.remove();\
+        if(event.target.tagName == "LI")removeIt.parentNode.removeChild(removeIt);
+
+
+    }, false);
 </script>
 </html>
