@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first event </title>
+</head>
+<body>
+   <button onclick="funEvent('first')">click</button>  
+   <button id="click">click</button>  
+   <button id="click2">click</button>  
+</body>
+<script>
+    // attachEvent () writen in old version of javascript
+    // document.getElementById("click").attachEvent("onclick", function(){
+    //     alert("second event")
+    // });
+
+    // jQuery event().On()
+
+    const funEvent = ( namw)=>{
+        alert(`first event"${namw}`)
+    }
+    // document.getElementById("click").onclick = function(){
+    //     alert("second event")
+    // }
+    document.addEventListener("click", function(event) {
+    console.log("Event Type:", event.type);
+    console.log("Key Pressed:", event.key);
+    console.log("Alt Pressed?", event.altKey);
+    console.log("Ctrl Pressed?", event.ctrlKey);
+});
+
+    // git commit -m"types of event handling in javascript"
+</script>
+</html>

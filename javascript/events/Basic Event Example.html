@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Object Example</title>
+</head>
+<body>
+
+  <button id="btn">Click Me</button>
+  <input id="inputBox" placeholder="Press any key here" />
+
+  <script>
+    // ---- CLICK EVENT EXAMPLE ----
+    document.getElementById("btn").addEventListener("click", function(event) {
+
+      console.log("------ CLICK EVENT PROPERTIES ------");
+
+      // type → event ka type batata hai (click, keydown, mousemove)
+      console.log("Event Type:", event.type);
+
+      // timestamp → event kab trigger hua (milliseconds mein time)
+      console.log("Time:", event.timeStamp);
+
+      // defaultPrevented → kya preventDefault use hua hai?
+      console.log("Default Prevented?", event.defaultPrevented);
+
+      // target → jis element par event hua
+      console.log("Target Element:", event.target);
+
+      // currentTarget → jis element par listener laga hai
+      console.log("Current Target:", event.currentTarget);
+
+      // clientX, clientY → mouse position browser window ke andar
+      console.log("Mouse X (client):", event.clientX);
+      console.log("Mouse Y (client):", event.clientY);
+
+      // screenX, screenY → mouse position screen ke hisab se
+      console.log("Mouse X (screen):", event.screenX);
+      console.log("Mouse Y (screen):", event.screenY);
+
+      console.log("-----------------------------------");
+    });
+
+
+    // ---- KEYBOARD EVENT EXAMPLE ----
+    document.getElementById("inputBox").addEventListener("keydown", function(event) {
+      console.log("------ KEYBOARD EVENT PROPERTIES ------");
+
+      // key → kaunsi key press hui
+      console.log("Key Pressed:", event.key);
+
+      // altKey → alt key sath press hui ya nahi
+      console.log("ALT Pressed?", event.altKey);
+
+      // ctrlKey → ctrl key sath press hui ya nahi
+      console.log("CTRL Pressed?", event.ctrlKey);
+
+      // shiftKey → shift key sath press hui ya nahi
+      console.log("SHIFT Pressed?", event.shiftKey);
+
+      // keyCode → old way to detect key (ab deprecated hai)
+      console.log("Key Code (Deprecated):", event.keyCode);
+
+      console.log("----------------------------------------");
+    });
+  </script>
+
+</body>
+</html>
